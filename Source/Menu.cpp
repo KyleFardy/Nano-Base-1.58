@@ -71,7 +71,7 @@ void main() {
 		case plist:
 		{
 			Menu::Title("Player List");
-			for (int i; i < 32; i++) {
+			for (int i = 0; i < 32; i++) {
 				if (NETWORK::NETWORK_IS_PLAYER_CONNECTED(i)) {
 					Menu::PlayerOption(i);
 				}
