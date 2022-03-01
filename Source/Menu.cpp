@@ -72,8 +72,8 @@ void main() {
 		{
 			Menu::Title("Player List");
 			for (int i; i < 32; i++) {
-				if (NETWORK::NETWORK_IS_PLAYER_CONNECTED(i)) {
-					Menu::PlayerOption(i);
+				if (ENTITY::DOES_ENTITY_EXIST(PLAYER::GET_PLAYER_PED_SCRIPT_INDEX(i))) {
+					Menu::MenuOption(PLAYER::GET_PLAYER_NAME(i), player_selected) ? selectedPlayer = i : NULL;
 				}
 			}
 		}
@@ -83,7 +83,12 @@ void main() {
 			Menu::Title(PLAYER::GET_PLAYER_NAME(selectedPlayer));
 			Menu::Break("It Works!");
 		}
-			break;
+		break;
+		case player_selected:
+		{
+                   Menu::Title(PLAYER::GET_PLAYER_NAME(selectedPlayer));
+		}
+		break;
 		case sub :
 		{
 			Menu::Title("Sub Menu");
