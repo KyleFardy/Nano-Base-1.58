@@ -15,6 +15,7 @@ enum SubMenus { //Add Sub Menus in here
 	font,
 	plist,
 	pmenu,
+	player_selected
 
 };
 extern enum SubMenus;
