@@ -6,6 +6,7 @@
 
 
 bool TestBool = false;
+bool GodModeToggle = false;
 int selectedPlayer;
 
 char* CharKeyboard(char* windowName = "", int maxInput = 21, char* defaultText = "") {
@@ -42,7 +43,13 @@ void Features()
 {
 	if (TestBool)
 	{
-		//Code to Execute
+		if (GodModeToggle)
+		{
+			ENTITY::SET_ENTITY_INVINCIBLE(PLAYER::PLAYER_PED_ID(), GodModeToggle);
+		}
+		else {
+			ENTITY::SET_ENTITY_INVINCIBLE(PLAYER::PLAYER_PED_ID(), GodModeToggle);
+		}
 	}
 	else
 	{
@@ -92,6 +99,8 @@ void main() {
 		case sub :
 		{
 			Menu::Title("Sub Menu");
+			Menu::Toggle("God Mode", GodModeToggle);
+
 			Menu::Toggle("Test Bool", TestBool);
 			//To use functions do _>
 			if (Menu::Option("Toggle Function"))

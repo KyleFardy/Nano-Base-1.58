@@ -1,6 +1,6 @@
 #pragma once
 
-// Generated 02 Jan 2022
+// Generated 13 Jul 2022
 
 #include "types.h"
 #include "nativeCaller.h"
@@ -3034,18 +3034,18 @@ namespace UI
 	static int _SET_NOTIFICATION_MESSAGE_CLAN_TAG_2(char* picName1, char* picName2, BOOL flash, int iconType1, char* sender, char* subject, float duration, char* clanTag, int iconType2, int p9) { return invoke<int>(0x531B84E7DA981FB6, picName1, picName2, flash, iconType1, sender, subject, duration, clanTag, iconType2, p9); } // 0x531B84E7DA981FB6 0xDEB491C8
 	static int END_TEXT_COMMAND_THEFEED_POST_TICKER(BOOL blink, BOOL showInBrief) { return invoke<int>(0x2ED7843F8F801023, blink, showInBrief); } // 0x2ED7843F8F801023 0x08F7AF78
 	static int END_TEXT_COMMAND_THEFEED_POST_TICKER_FORCED(BOOL blink, BOOL p1) { return invoke<int>(0x44FA03975424A0EE, blink, p1); } // 0x44FA03975424A0EE 0x57B8D0D4
-	static int END_TEXT_COMMAND_THEFEED_POST_TICKER_3(BOOL blink, BOOL p1) { return invoke<int>(0x378E809BF61EC840, blink, p1); } // 0x378E809BF61EC840 0x02BCAF9B
-	static int END_TEXT_COMMAND_THEFEED_POST_TICKER_AWARD(char* p0, char* p1, int p2, int p3, char* p4) { return invoke<int>(0xAA295B6F28BD587D, p0, p1, p2, p3, p4); } // 0xAA295B6F28BD587D 0x02DED2B8
-	static int END_TEXT_COMMAND_THEFEED_POST_TICKER_APARTMENT_INVITE(BOOL p0, BOOL p1, int* p2, int p3, BOOL isLeader, BOOL unk0, int clanDesc, int R, int G, int B) { return invoke<int>(0x97C9E4E7024A8F2C, p0, p1, p2, p3, isLeader, unk0, clanDesc, R, G, B); } // 0x97C9E4E7024A8F2C 0xA9CCEF66
+	static int _DRAW_NOTIFICATION_3(BOOL blink, BOOL p1) { return invoke<int>(0x378E809BF61EC840, blink, p1); } // 0x378E809BF61EC840 0x02BCAF9B
+	static int _DRAW_NOTIFICATION_AWARD(char* p0, char* p1, int p2, int p3, char* p4) { return invoke<int>(0xAA295B6F28BD587D, p0, p1, p2, p3, p4); } // 0xAA295B6F28BD587D 0x02DED2B8
+	static int _DRAW_NOTIFICATION_APARTMENT_INVITE(BOOL p0, BOOL p1, int* p2, int p3, BOOL isLeader, BOOL unk0, int clanDesc, int R, int G, int B) { return invoke<int>(0x97C9E4E7024A8F2C, p0, p1, p2, p3, isLeader, unk0, clanDesc, R, G, B); } // 0x97C9E4E7024A8F2C 0xA9CCEF66
 	static int END_TEXT_COMMAND_THEFEED_POST_CREWTAG_WITH_GAME_NAME(BOOL p0, BOOL p1, int* p2, int p3, BOOL isLeader, BOOL unk0, int clanDesc, char* playerName, int R, int G, int B) { return invoke<int>(0x137BC35589E34E1E, p0, p1, p2, p3, isLeader, unk0, clanDesc, playerName, R, G, B); } // 0x137BC35589E34E1E 0x88B9B909
-	static int END_TEXT_COMMAND_THEFEED_POST_TICKER_UNLOCK(char* unlockLabel, int iconType, char* unk2) { return invoke<int>(0x33EE12743CCD6343, unlockLabel, iconType, unk2); } // 0x33EE12743CCD6343 0xE05E7052
-	static int END_TEXT_COMMAND_THEFEED_POST_TICKER_UNLOCK_2(char* unlockLabel, int iconType, char* unk2, int fadeInTime) { return invoke<int>(0xC8F3AAF93D0600BF, unlockLabel, iconType, unk2, fadeInTime); } // 0xC8F3AAF93D0600BF 0x4FA43BA4
+	static int _DRAW_NOTIFICATION_UNLOCK(char* unlockLabel, int iconType, char* unk2) { return invoke<int>(0x33EE12743CCD6343, unlockLabel, iconType, unk2); } // 0x33EE12743CCD6343 0xE05E7052
+	static int _DRAW_NOTIFICATION_UNLOCK_2(char* unlockLabel, int iconType, char* unk2, int fadeInTime) { return invoke<int>(0xC8F3AAF93D0600BF, unlockLabel, iconType, unk2, fadeInTime); } // 0xC8F3AAF93D0600BF 0x4FA43BA4
 	static int END_TEXT_COMMAND_THEFEED_POST_UNLOCK_TU_WITH_COLOR(char* primaryText, int iconType, char* unk2, int fadeInTime, int primaryStyle, BOOL ignoreLoc) { return invoke<int>(0x7AE0589093A2E088, primaryText, iconType, unk2, fadeInTime, primaryStyle, ignoreLoc); } // 0x7AE0589093A2E088 0x8C90D22F
-	static int END_TEXT_COMMAND_THEFEED_POST_TICKER_4(BOOL blink, BOOL p1) { return invoke<int>(0xF020C96915705B3A, blink, p1); } // 0xF020C96915705B3A 0x8E319AB8
+	static int _DRAW_NOTIFICATION_4(BOOL blink, BOOL p1) { return invoke<int>(0xF020C96915705B3A, blink, p1); } // 0xF020C96915705B3A 0x8E319AB8
 	static Any _0x8EFCCF6EC66D85E4(Any* p0, Any* p1, Any* p2, BOOL p3, BOOL p4) { return invoke<Any>(0x8EFCCF6EC66D85E4, p0, p1, p2, p3, p4); } // 0x8EFCCF6EC66D85E4
 	static Any _0xB6871B0555B02996(Any* p0, Any* p1, Any p2, Any* p3, Any* p4, Any p5) { return invoke<Any>(0xB6871B0555B02996, p0, p1, p2, p3, p4, p5); } // 0xB6871B0555B02996 0x5E93FBFA
-	static int END_TEXT_COMMAND_THEFEED_POST_TICKER_WITH_ICON(int type, int image, char* text) { return invoke<int>(0xD202B92CBF1D816F, type, image, text); } // 0xD202B92CBF1D816F
-	static int END_TEXT_COMMAND_THEFEED_POST_TICKER_WITH_BUTTON(int type, char* button, char* text) { return invoke<int>(0xDD6CB2CCE7C2735C, type, button, text); } // 0xDD6CB2CCE7C2735C
+	static int _DRAW_NOTIFICATION_WITH_ICON(int type, int image, char* text) { return invoke<int>(0xD202B92CBF1D816F, type, image, text); } // 0xD202B92CBF1D816F
+	static int _DRAW_NOTIFICATION_WITH_BUTTON(int type, char* button, char* text) { return invoke<int>(0xDD6CB2CCE7C2735C, type, button, text); } // 0xDD6CB2CCE7C2735C
 	static void BEGIN_TEXT_COMMAND_PRINT(char* GxtEntry) { invoke<Void>(0xB87A37EEB7FAA67D, GxtEntry); } // 0xB87A37EEB7FAA67D 0xF42C43C7
 	static void END_TEXT_COMMAND_PRINT(int duration, BOOL drawImmediately) { invoke<Void>(0x9D77056A530643F6, duration, drawImmediately); } // 0x9D77056A530643F6 0x38F82261
 	static void BEGIN_TEXT_COMMAND_IS_MESSAGE_DISPLAYED(char* text) { invoke<Void>(0x853648FD1063A213, text); } // 0x853648FD1063A213 0xDD524A11
