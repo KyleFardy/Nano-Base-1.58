@@ -78,7 +78,7 @@ void main() {
 		case plist:
 		{
 			Menu::Title("Player List");
-			for (int i; i < 32; i++) {
+			for (int i = 0; i < 32; i++) {
 				if (ENTITY::DOES_ENTITY_EXIST(PLAYER::GET_PLAYER_PED_SCRIPT_INDEX(i))) {
 					Menu::MenuOption(PLAYER::GET_PLAYER_NAME(i), player_selected) ? selectedPlayer = i : NULL;
 				}
